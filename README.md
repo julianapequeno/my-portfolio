@@ -1,3 +1,7 @@
-# This is the repository for my first Portfolio project using HTML5 and CSS3
+# My Portfolio
 
-> > 6 years later I've first seen these front-end technologies
+My first portfolio site ever.
+<br>
+This project was made for practicing concepts of HTML5 and CSS3 on @Womakerscode bootcamp.
+<br>
+I've started with an example made in class, then I decided to change some things.
