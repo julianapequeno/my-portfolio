@@ -147,7 +147,7 @@ body {
 }
 
 .aboutme__education--degree:hover{
-    background-color: #330c49;
+    background-color: #330c49; 
     box-shadow: 15px 15px #000;
     padding: 10px;
 }
@@ -216,7 +216,7 @@ body {
 }
 
 .experience__project--about {
-    position: absolute;
+    position: relative;
     z-index: 1;
     color: #330c49;
     padding: 8px;
@@ -306,6 +306,7 @@ body {
 .image {
     overflow: hidden;
     margin: 26px auto;
+    max-height: 100%;
 }
 
 .aboutme__education--more--sec--text {
@@ -333,6 +334,7 @@ body {
         flex-wrap: nowrap;
         max-height: none;
         max-width: none;
+        margin: auto;
     }
 
     .aboutme__education--more-sec {
@@ -344,4 +346,13 @@ body {
         border: 1px solid red;
         width: 100%;
     }
+
+    .more__experience {
+        border: 1px solid red;
+    }
+    .aboutme__experience--more {
+        border: 1px solid red;
+    }
+
+    
 }
