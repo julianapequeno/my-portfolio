@@ -18,6 +18,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
         <title>Juliana's room</title>
     </head>
     <body>  
@@ -41,14 +42,14 @@
 
             <section class="section">
                 
-                <article class="course">
+                <article class="course" id="aboutme-section">
                     <a href="#aboutme" class="link_to_sections">
                         <h3 class="course__title"> About me</h3>
                         <p class="course__description">Section about my academic education and experience, to sum up me and my journey</p>
                     </a>
                 </article>
 
-                <article class="course">
+                <article class="course" id="update-section">
                     <a href="#2024activity" class="link_to_sections">
                         <h3 class="course__title">Update: 2024</h3>
                         <p class="course__description"> Life's update: volunteer work, bootcamp, internship, studies...</p>
@@ -148,5 +149,21 @@
                  by Juliana Santiago
             </span>
         </footer>
+
+        <script>
+            jQuery(function($){
+                $("#aboutme-section").click(function() {
+                    $('html, body').animate({
+                      scrollTop: $("#aboutme").offset().top
+                    }, 500);
+                  });
+
+                $("#update-section").click(function() {
+                    $('html, body').animate({
+                        scrollTop: $("#2024activity").offset().top
+                    },500);
+                })
+            });
+        </script>
     </body>
 </html>
