@@ -9,6 +9,8 @@
         
         <link rel="shortcut icon" type="image/png" href="assets/icons/iconmonstr-book-19-240 (4).png">
 
+        <link rel="stylesheet" href="assets/css/images.css">
+        <link rel="stylesheet" href='assets/css/header.css'>
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalbize.css">
 
@@ -17,15 +19,16 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <title>Juliana's room</title>
     </head>
     <body>  
         <header class="header">
-            <a href="#" class="header__link">
+            <a href="https://github.com/julianapequeno" class="header__link" target="_blank">
                 <img class="icon" title="Check my github" alt="github icon and link" src="assets/icons/iconmonstr-github-1.svg">
             </a>
 
-            <a href="#" class="header__link">
+            <a href="https://www.linkedin.com/in/juliana-santiago-07819422b/" class="header__link" target="_blank">
                 <img class="icon" title="Here's my linkedin" alt="linkedin icon and link" src="assets/icons/iconmonstr-linkedin-3.svg">
             </a>
         </header>
@@ -40,14 +43,14 @@
 
             <section class="section">
                 
-                <article class="course">
+                <article class="course" id="aboutme-section">
                     <a href="#aboutme" class="link_to_sections">
                         <h3 class="course__title"> About me</h3>
                         <p class="course__description">Section about my academic education and experience, to sum up me and my journey</p>
                     </a>
                 </article>
 
-                <article class="course">
+                <article class="course" id="update-section">
                     <a href="#2024activity" class="link_to_sections">
                         <h3 class="course__title">Update: 2024</h3>
                         <p class="course__description"> Life's update: volunteer work, bootcamp, internship, studies...</p>
@@ -55,8 +58,10 @@
                 </article>
 
                 <article class="course">
-                    <h3 class="course__title"> My projects</h3>
-                    <p class="course__description">Explore projects that I've been working on and the ones that I did in my trajetory</p>
+                    <a href="projects.html" class="link_to_sections">
+                        <h3 class="course__title"> My projects</h3>
+                        <p class="course__description">Explore projects that I've been working on and the ones that I did in my trajetory</p>
+                    </a>
                 </article>
 
                 <article class="course">
@@ -66,46 +71,60 @@
             </section>
 
             <section class="aboutme" id="aboutme">                
-                <div class="aboutme__picture">
-                </div>
-
                 <div class="aboutme__sections">
                     <h3 class="aboutme__title"> About me: Meet Juliana's background</h3>
                     <section class="aboutme__education">
-                        <aside class="aboutme__education--degree">
+                        <aside class="aboutme__education--degree ct">
                             <h3 class="education__title">👩🏾‍💻Computer Technician</h3>
                             <p class="education__description">Escola Agrícola de Jundiaí (EAJ/UFRN) <Br><i>2018-2020</i></p>
                         </aside>
         
-                        <aside class="aboutme__education--degree">
+                        <aside class="aboutme__education--degree it">
                             <h3 class="education__title"> 📚Bacharel's Degree on Information Technology</h3>
                             <p class="education__description"> Instituto Metrópole Digital (IMD/UFRN) <br> <i>2021-</i></p>
                         </aside>
         
-                        <aside class="aboutme__education--degree">
+                        <aside class="aboutme__education--degree toronto">
                             <h3 class="education__title">🍁English School in Toronto (Exchange Program)</h3>
                             <p class="education__description"> Kaplan International School in Toronto <br> <I>August-December 2022</I></p>
                         </aside>
                     </section>
                 </div>
 
-                <div class="aboutme__sections">
+                <div class="aboutme__sections aboutme__education aboutme__education--more" style="display: none;">
+                    <div class="aboutme__education--more-sec image">
+                         <img class="ct__image" src="assets/images/eaj.jpg" style="max-height: 300px;">
+                         <img class="it__image" src="assets/images/experience-internship-walle.png" style="max-height: 300px;">
+                         <img class="toronto__image" src="assets/images/toronto.jpg" style="max-height: 300px;">
+                    </div>
+                    <div class="aboutme__education--more-sec">
+                        <p class="aboutme__education--more--sec--text ct__text" style="display: none;"> Having studied in a technical school during my high school was one of the best decisions of my life. I've learned so much with the teachers, lessons and mainly the people that I met there. It were 3 years of getting to know various fields of IT, as programming, networks, web development, entrepreneurship, and having lots of opportunities to grow as a person. EAJ gave me the opportunity to participate in a national event, FEBRACE 2021, engage in scientific research, learn how to make a robot with Arduino and having so much fun while doing this with a team of almost 20 people. I learned to communicate, work with other people and study on my own as well. I can say that this school changed me as a person.</p>
+                        <p class="it__text" style="display: none;"> Lorem guiys</p>
+                        <p class="toronto__text" style="display: none;"> This experience was one of the best times in my life, I can say for sure. I've lived in Toronto for 4 months. Every day I had to get out of my confort zone, meet new people, be able to get things and information that I needed. It was a unique experience for me. Having only 19 years old, I could meet lots of people from all around the world, make connections, practice my English and grow as a person. During my time there, I've attended to B2 classes for 10 weeks, then I did an progress test and passed for C1 (Advanced) level. Due to the time, I'd only more 6 weeks in C1. Grammar, listening, speaking and writing were parts of the daily classes, and I enjoyed so much because I was leaning a lot every day. In C1, we had to do some lectures on Fridays, and this helped a lot with my formal speech.</p>
+                    </div>                    
+                </div>
+
+                <div class="aboutme__sections" >
                 <h3 class="aboutme__title">My experience</h3>
                     <section class="aboutme__experience">
                         <aside class="aboutme__experience--project">
-                            <h3 class="experience__project--about" hidden> Research Intenship (2019-2021)</h3>
+                            <h3 class="experience__project--about" > Research Intenship (2019-2021)</h3>
                             <img class="experience__project" src="assets/images/experience-internship-image.png">
                         </aside>
                         <aside class="aboutme__experience--project" >
-                            <h3 class="experience__project--about" hidden> Student Monitor (2021)</h3>
+                            <h3 class="experience__project--about"> Student Monitor (2021)</h3>
                             <img class="experience__project" src="assets/images/experience-monitor-image.png">
                         </aside>
                         <aside class="aboutme__experience--project">
-                            <h3 class="experience__project--about" hidden> Research Intenship (2023)</h3>
+                            <h3 class="experience__project--about"> Research Intenship (2023)</h3>
                             <img class="experience__project" src="assets/images/experience-internship-walle.png">
                         </aside>
-                    
                     </section>
+                    <div class="aboutme__sections aboutme__education aboutme__education--more more__experience" style="display: none;">
+                        <div class="aboutme__experience--more">
+                            <h3> Research Intenship (2019-2021)</h2>
+                        </div>
+                    </div>
                 </div>
 
             </section>
@@ -145,5 +164,80 @@
                  by Juliana Santiago
             </span>
         </footer>
+
+        <script>
+            jQuery(function($){
+                $("#aboutme-section").click(function() {
+                    $('html, body').animate({
+                      scrollTop: $("#aboutme").offset().top
+                    }, 500);
+                  });
+
+                $("#update-section").click(function() {
+                    $('html, body').animate({
+                        scrollTop: $("#2024activity").offset().top
+                    },500);
+                });
+
+                $(".ct").on({
+
+                    click: function(){
+                        $(".ct__text").css("display","block")
+                        $(".it__text").css("display","none")
+                        $(".toronto__text").css("display","none")
+                        $(".aboutme__education--more").slideToggle();
+                        $(".it__image").css("display","none")
+                        $(".ct__image").css("display","block")
+                        $(".toronto__image").css("display","none")
+                    }
+                })
+
+                $(".it").on({
+
+                    click: function(){
+                        $(".ct__text").css("display","none")
+                        $(".it__text").css("display","block")
+                        $(".toronto__text").css("display","none")
+                        $(".aboutme__education--more").slideToggle();
+                        $(".it__image").css("display","block")
+                        $(".ct__image").css("display","none")
+                        $(".toronto__image").css("display","none")
+                    }
+                })
+
+                $(".toronto").on({
+
+                    click: function(){
+                        $(".ct__text").css("display","none")
+                        $(".it__text").css("display","none")
+                        $(".toronto__text").css("display","block")
+                        $(".aboutme__education--more").slideToggle();
+                        $(".it__image").css("display","none")
+                        $(".ct__image").css("display","none")
+                        $(".toronto__image").css("display","block")
+                    }
+                })
+
+                $(".aboutme__experience--project").on({
+                    mouseover: function(){
+                        $(".more__experience").css("display","block")
+                    },
+
+                    mouseout:  function(){
+                        $(".more__experience").css("display","none")
+                    }
+                })
+                /*
+                $(".aboutme__education--degree").on('click', function() {
+                    var color = $('.aboutme__education--degree').get('background-color').val()
+                    console.log(color)
+                    if(color == '#330c49'){
+                        $(".aboutme__education--degree").css("background-color","#330c49");
+                    }else{
+                        $(".aboutme__education--degree").css("background-color","#d5a0f1");
+                    }
+                }) */
+            });
+        </script>
     </body>
 </html>
