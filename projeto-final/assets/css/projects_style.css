@@ -9,6 +9,12 @@ body {
     scroll-behavior: smooth;
   }
 
+  .icon--homepage {
+    border: 2px solid #d5a0f1 ;
+    border-radius: 20px;
+    align-self: left;
+  }
+
 .header {
     max-width: none;
 }

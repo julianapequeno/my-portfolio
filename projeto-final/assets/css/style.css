@@ -287,3 +287,61 @@ body {
     text-align: justify;
     padding: 16px;
 }
+
+
+.aboutme__education--more {
+    background-color: #e4bbfb;
+    color: black;
+    max-height: 300px;
+    justify-content:space-evenly;
+}
+
+.aboutme__education--more-sec {
+    max-width: 50%;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    overflow: overlay;
+}
+
+.image {
+    overflow: hidden;
+    margin: 26px auto;
+}
+
+.aboutme__education--more--sec--text {
+    border: 1px solid red;
+    padding: 8px;
+    text-align: justify;
+    margin: 10px;
+}
+
+@media (max-width: 500px) { 
+    .section {
+        flex-direction: column;
+        margin: 24px auto;
+        justify-content: space-evenly;
+    }
+
+    .more__abouteducation {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .aboutme__education--more {
+        border: 1px solid red;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-height: none;
+        max-width: none;
+    }
+
+    .aboutme__education--more-sec {
+        max-width: none;
+        align-self: center;
+        box-sizing: border-box;
+        overflow-x: scroll;
+        overflow: overlay;
+        border: 1px solid red;
+        width: 100%;
+    }
+}
