@@ -39,30 +39,41 @@ main {
     flex-direction: row;
     margin: 0 auto;
     background-color: #d5a0f1;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    overflow: overlay;
 }
 
 .project {
-    
     padding: 8px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    margin: 16px 5px;
-    max-width: 250px;
-    max-height: 300px;
+    margin: 20px 5px;
+    max-width: 300px;
+    max-height: 700px;
     overflow: hidden;
     background-color: #330c49;
     box-shadow: 10px 10px black;
     border-radius: 10px;
-    margin-left: 30px;
+    margin-left: 20px;
+    justify-content:space-evenly;
 }
 
-.project:hover {
+@media(max-width: 500px){
+    .project{
+        max-width: 360px;
+        margin: 16px 16px;
+        
+    }
+}
+
+.project:hover, .project:focus{
     border: 1px solid white;
 }
 
 .project__title {
-    
+    align-self: center;
     margin: 0;
 }
 
@@ -74,7 +85,40 @@ main {
 }
 
 .project__description {
-    
+    padding: 14px;
+    padding-bottom: 5px;
     margin: 5;
+    margin-bottom: 0px;
     text-align: justify;
+}
+
+.project__image {
+    align-self: center;
+    max-width: 88%;
+    max-height: 70%;
+    border-radius: 15px;
+}
+
+.project__link {
+    text-decoration: none; 
+    background-color: white;
+    padding-left: 6px;
+    margin: 0 5px;
+    color:#330c49;
+}
+
+.project__link:hover {
+    text-decoration: none; 
+    background-color: black;
+    color: white;
+}
+
+.project__techstack {
+    background-color: #ca536b; 
+    opacity: .95;
+    color:white;
+    margin: 0 5px;
+    margin-bottom: 5px;
+    padding-left: 6px;
+    border-radius: 5px;
 }
