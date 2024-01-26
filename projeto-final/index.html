@@ -12,7 +12,6 @@
         <link rel="stylesheet" href="assets/css/images.css">
         <link rel="stylesheet" href='assets/css/header.css'>
         <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalbize.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -93,9 +92,9 @@
 
                 <div class="aboutme__sections aboutme__education aboutme__education--more" style="display: none;">
                     <div class="aboutme__education--more-sec image">
-                         <img class="ct__image" src="assets/images/eaj.jpg" style="max-height: 300px;">
-                         <img class="it__image" src="assets/images/experience-internship-walle.png" style="max-height: 300px;">
-                         <img class="toronto__image" src="assets/images/toronto.jpg" style="max-height: 300px;">
+                         <img class="ct__image" src="assets/images/eaj.jpg" alt="Escola Agrícola de Jundiaí logo" style="max-height: 300px;">
+                         <img class="it__image" src="assets/images/experience-internship-walle.png" alt="" style="max-height: 300px;">
+                         <img class="toronto__image" src="assets/images/toronto.jpg" alt="A book in a table with an eco bag, some pens, a hoodie and a balzacs coffee" style="max-height: 300px;">
                     </div>
                     <div class="aboutme__education--more-sec">
                         <p class="aboutme__education--more--sec--text ct__text" style="display: none;"> Having studied in a technical school during my high school was one of the best decisions of my life. I've learned so much with the teachers, lessons and mainly the people that I met there. It were 3 years of getting to know various fields of IT, as programming, networks, web development, entrepreneurship, and having lots of opportunities to grow as a person. EAJ gave me the opportunity to participate in a national event, FEBRACE 2021, engage in scientific research, learn how to make a robot with Arduino and having so much fun while doing this with a team of almost 20 people. I learned to communicate, work with other people and study on my own as well. I can say that this school changed me as a person.</p>
@@ -107,23 +106,51 @@
                 <div class="aboutme__sections" >
                 <h3 class="aboutme__title">My experience</h3>
                     <section class="aboutme__experience">
-                        <aside class="aboutme__experience--project">
+                        <aside class="aboutme__experience--project experience__1">
                             <h3 class="experience__project--about" > Research Intenship (2019-2021)</h3>
-                            <img class="experience__project" src="assets/images/experience-internship-image.png">
+                            <img class="experience__project" src="assets/images/experience-internship-image.png" alt="COMFIBIS application screen print, in which there are a matrix and a pink point in the middle">
                         </aside>
-                        <aside class="aboutme__experience--project" >
+                        <aside class="aboutme__experience--project experience__2" >
                             <h3 class="experience__project--about"> Student Monitor (2021)</h3>
-                            <img class="experience__project" src="assets/images/experience-monitor-image.png">
+                            <img class="experience__project" src="assets/images/experience-monitor-image.png" alt="EAJ Marvel site's print">
                         </aside>
-                        <aside class="aboutme__experience--project">
+                        <aside class="aboutme__experience--project experience__3">
                             <h3 class="experience__project--about"> Research Intenship (2023)</h3>
-                            <img class="experience__project" src="assets/images/experience-internship-walle.png">
+                            <img class="experience__project" src="assets/images/experience-internship-walle.png" alt="A WALL-E picture">
                         </aside>
                     </section>
-                    <div class="aboutme__sections aboutme__education aboutme__education--more more__experience" style="display: none;">
-                        <div class="aboutme__experience--more">
-                            <h3> Research Intenship (2019-2021)</h2>
 
+                    <div class="aboutme__sections aboutme__education aboutme__education--more more__experience" style="display: none;">
+                        <div class="more__experience1" style="display: none;">
+                            <h3 style="padding-left: 20px;"> Research Intenship (2019-2021)</h2>
+                            <p class="experience__text"> 
+                                <ul>
+                                    <li>I was a researcher intern for 1,5 year of my computer technician course in Escola Agrícola Agrícola de Jundiaí.</li>
+                                    <li>Worked with Particle Swarm Optimization, a bio-inspired algorithm. </li>
+                                    <li>Project's name: " CoMFiBis PSO: Integração da Computação, Matemática, Fisica e Biologia no Estudo de Otimização por Enxame de Partículas em Problemas nas Ciências Agrárias".</li>
+                                    <li>Technologies: Arduino, Java, JavaFX.</li>
+                                    <li><strong>Participation</strong> in FEBRACE 2021, eCIct 2020</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="more__experience2" style="display: none;">
+                            <h3> Student Monitor (2021)</h2>
+                            <p class="experience__text">
+                                I worked as a Monitor in Escola Agrícola de Jundiaí when I was at the third and final year of my technician course. Due to COVID-19 pandemics, the classes were online so I worked remotely.
+                                We developed a project that had as goal to encourage the students to participate and interact throughout the semester, trying to get their attention to online classes. For this reason, we did a gamification system by which they could earn points while studying and anwsering to extra-activities.
+                                <ul>
+                                    <li>The site was made using Google Sites.</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="more__experience3" style="display: none;">
+                            <h3> Research Intenship (2023)</h2>
+                            <p class="experience__text">
+                                <ul>
+                                    <li>Project: New methods of automatic topic modelling on heterogeneous corpus apllied to psychobiology, history and literature.</li>
+                                    <li>Natural Language Processing (NLP)</li>
+                                </ul>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -228,6 +255,38 @@
                         $(".more__experience").css("display","none")
                     }
                 })
+
+                $(".experience__1").on({
+                    mouseover: function(){
+                        $(".more__experience1").css("display","block")
+                    },
+
+                    mouseout:  function(){
+                        $(".more__experience1").css("display","none")
+                    }
+                })
+
+                $(".experience__2").on({
+                    mouseover: function(){
+                        $(".more__experience2").css("display","block")
+                    },
+
+                    mouseout:  function(){
+                        $(".more__experience2").css("display","none")
+                    }
+                })
+
+                $(".experience__3").on({
+                    mouseover: function(){
+                        $(".more__experience3").css("display","block")
+                    },
+
+                    mouseout:  function(){
+                        $(".more__experience3").css("display","none")
+                    }
+                })
+
+
                 /*
                 $(".aboutme__education--degree").on('click', function() {
                     var color = $('.aboutme__education--degree').get('background-color').val()

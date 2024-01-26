@@ -53,6 +53,7 @@ body {
     width: 100%;
     max-width: 450px;
     text-align: center;
+    font-family: "Poppins",sans-serif;
 }
 
 .link_to_sections {
@@ -310,10 +311,25 @@ body {
 }
 
 .aboutme__education--more--sec--text {
-    border: 1px solid red;
     padding: 8px;
     text-align: justify;
     margin: 10px;
+}
+
+
+.more__experience {
+    box-sizing: border-box;
+    background-color: #330c499d;
+    color: white;
+    box-shadow: 8px 8px black;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 30px;
+}
+
+.experience__text {
+    padding-left: 10px;
+    font-family: "Poppins",sans-serif;
 }
 
 @media (max-width: 500px) { 
@@ -329,11 +345,10 @@ body {
     }
 
     .aboutme__education--more {
-        border: 1px solid red;
         flex-direction: column;
         flex-wrap: nowrap;
         max-height: none;
-        max-width: none;
+        max-width: 100%;
         margin: auto;
     }
 
@@ -343,15 +358,24 @@ body {
         box-sizing: border-box;
         overflow-x: scroll;
         overflow: overlay;
-        border: 1px solid red;
         width: 100%;
     }
 
-    .more__experience {
-        border: 1px solid red;
+    .experience__text {
+        padding: 0px 10px;
+        font-family: "Poppins",sans-serif;
     }
-    .aboutme__experience--more {
-        border: 1px solid red;
+
+    .profile__description {
+        font-family: "Poppins",sans-serif;
+        text-align: left;
+        padding-left: 35px;
+        padding-right: 30px;
+
+    }
+
+    .more__experience {
+        margin: 10px;
     }
 
     
