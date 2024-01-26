@@ -1,7 +1,8 @@
 
-.toronto__image {
+.toronto__image, .ct__image, .it__image{
     padding: 8px;
-    width: 300px;
+    width: 350px;
+    justify-content: center;
 }
 
 .toronto__text {

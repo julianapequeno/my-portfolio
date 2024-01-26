@@ -24,6 +24,12 @@
     border-radius: 5px;
 }
 
+.icon--homepage {
+    border: 2px solid #d5a0f1 ;
+    border-radius: 20px;
+    align-self: left;
+  }
+
 .icon {
     width: 34px;
     border-radius: 15px;
